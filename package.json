@@ -1,0 +1,72 @@
+{
+  "name": "radar-utils",
+  "version": "0.1.0",
+  "description": "Typed helpers for ADS-B (1090ES DF17) decoding, NORAD TLE parsing, and great-circle geodesy.",
+  "keywords": [
+    "adsb",
+    "ads-b",
+    "1090es",
+    "mode-s",
+    "tle",
+    "norad",
+    "satellite",
+    "aviation",
+    "radar",
+    "geodesy",
+    "haversine",
+    "great-circle",
+    "cpr"
+  ],
+  "author": "sachinbabu <sachinbabu.dev@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./tle": {
+      "types": "./dist/tle/index.d.ts",
+      "import": "./dist/tle/index.js",
+      "require": "./dist/tle/index.cjs"
+    },
+    "./adsb": {
+      "types": "./dist/adsb/index.d.ts",
+      "import": "./dist/adsb/index.js",
+      "require": "./dist/adsb/index.cjs"
+    },
+    "./geodesy": {
+      "types": "./dist/geodesy/index.d.ts",
+      "import": "./dist/geodesy/index.js",
+      "require": "./dist/geodesy/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
