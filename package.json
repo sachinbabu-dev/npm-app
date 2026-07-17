@@ -18,6 +18,14 @@
     "cpr"
   ],
   "author": "sachinbabu <sachinbabu.dev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinbabu-dev/radar-utils.git"
+  },
+  "homepage": "https://github.com/sachinbabu-dev/radar-utils#readme",
+  "bugs": {
+    "url": "https://github.com/sachinbabu-dev/radar-utils/issues"
+  },
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
