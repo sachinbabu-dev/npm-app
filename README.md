@@ -2,7 +2,7 @@
 
 Typed TypeScript helpers for radar / satellite tracking applications:
 
-- **`radar-utils/tle`** — NORAD Two-Line Element parser with checksum validation
+- **`radar-utils/tle`** — NORAD Two-Line  Element parser with checksum validation
 - **`radar-utils/adsb`** — ADS-B 1090ES (DF17) message decoder + CPR position decoding
 - **`radar-utils/geodesy`** — haversine distance, bearings, destination point, cross-track distance
 
